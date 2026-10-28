@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wish4value-evalversion"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出评测的版本化上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "wish4value" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://wish4value.github.io"
+Repository = "https://github.com/wish4value/evalversion"
+Issues = "https://github.com/wish4value/evalversion/issues"
+
+[project.scripts]
+evalversion = "evalversion:main"
+
+[tool.setuptools]
+py-modules = ["evalversion"]
